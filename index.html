@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Recorrido Virtual de Departamentos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+
+<meta property="og:title" content="Hermosos Departamentos en Renta - Recorrido 360°">
+<meta property="og:description" content="Explora cada rincón de los departamentos que tenemos en renta desde tu celular o computadora. ¡Haz clic aquí!">
+<meta property="og:image" content="img/vistaDepa">
+
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-avenida">
+        <li class="text">Avenida</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-entradacalle">
+        <li class="text">Entrada al Condominio</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-estacionamiento-">
+        <li class="text">Estacionamiento </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-escalerasestacionamiento">
+        <li class="text">Escaleras del Estacionamiento</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-depa5afuera">
+        <li class="text">Departamento 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-depasinamueblarentrada">
+        <li class="text">Departamento Sin Amueblar Entrada</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-depasinamueblarcocina">
+        <li class="text">Departamento Sin Amueblar Cocina</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-depasinamueblarbaoprin">
+        <li class="text">Departamento Sin Amueblar Baño Principal</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-depasinamueblarhab1">
+        <li class="text">Departamento Sin Amueblar Habitación 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-depasinamueblarhab2">
+        <li class="text">Departamento Sin Amueblar Habitación 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-depasinamueblarbaohab">
+        <li class="text">Departamento Sin Amueblar Baño Habitación </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-depasinamueblarbalcon">
+        <li class="text">Departamento Sin Amueblar Balcón</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-escaleras">
+        <li class="text">Escaleras</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-depa6afuera">
+        <li class="text">Departamento 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-depa6entrada">
+        <li class="text">Departamento 6 Entrada</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-depa6comedor">
+        <li class="text">Departamento 6 Comedor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-depa6balcon">
+        <li class="text">Departamento 6 Balcón</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-depa6hab2">
+        <li class="text">Departamento 6 Habitación 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-depa6baohab">
+        <li class="text">Departamento 6 Baño Habitación</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-depa6hab">
+        <li class="text">Departamento 6 Habitación 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-depa6baoprin">
+        <li class="text">Departamento 6 Baño Principal</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-depa9escaleras">
+        <li class="text">Departamento 9 Escaleras</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-depa9afuera">
+        <li class="text">Departamento 9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-depaamuebladoentrada">
+        <li class="text">Departamento Amueblado Entrada</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-depaamuebladococina">
+        <li class="text">Departamento Amueblado Cocina</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-depaamuebladobaoprin">
+        <li class="text">Departamento Amueblado Baño Principal</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-depaamuebladosala">
+        <li class="text">Departamento Amueblado Sala</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-depaamuebladohab1">
+        <li class="text">Departamento Amueblado Habitación 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-depaamuebladohab2">
+        <li class="text">Departamento Amueblado Habitación 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-depaamuebladobaohab">
+        <li class="text">Departamento Amueblado Baño Habitación </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-depaamuebladobalcon">
+        <li class="text">Departamento Amueblado Balcón</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-alberca">
+        <li class="text">Alberca</li>
+      </a>
+
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<div id="visorPantallaCompleta" style="display: none; position: fixed; z-index: 99999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); align-items: center; justify-content: center;">
+  <span onclick="document.getElementById('visorPantallaCompleta').style.display='none'" style="position: absolute; top: 20px; right: 40px; color: white; font-size: 50px; font-weight: bold; cursor: pointer;">&times;</span>
+  <img id="imagenEnVisor" src="" style="max-width: 90vw; max-height: 90vh; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+</div>
+
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+
+
+</body>
+</html>
